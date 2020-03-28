@@ -33,10 +33,13 @@
 .top input{width: 550px;height: 35px;border: solid 2px #f54401;padding-left: 5px;}
 .top .btn{float: right;width: 80px;height: 41px;background-color: #f54401;border-style: none;color: aliceblue;font-size: 16px;}
 .top .btn:hover{cursor: pointer;}
-.top .search ul li{float: left;color: #333;font-size: 12px;margin-top: 6px;}
+.top .search ul li{float: left;color: #333;font-size: 12px;margin-top: 7px;}
 .top .search ul li:nth-child(1){color: #9b9b9b;}
 .top .search ul li a:hover{color: #f54401;}
-.top .search p{float: right;color: #333;margin-top: 6px;}
+
+.top .search .p1 a{float: left;margin-left: 76px;margin-top: 7px;}
+.top .search .p2 a{float: left;margin-top: 7px; }
+/* .top .search p:nth-child(2) a{float: left;margin-left: 30px;} */
 .top .search p a:hover{color: #f54401;}
 
 
@@ -65,8 +68,8 @@
 .list_all ul li p{padding: 10px 40px;font-weight: 900;font-size: 16px;}
 .list_all ul li i{font-size: 12px; font-weight:500;margin-left: 20px;}
 /* list之轮播图 */
-.list_all .box{width: 980px;height: 400px;margin: 0 auto;position: relative;overflow: hidden;}
-.list_all .imgbox a{width: 1000px;height: 400px;position: absolute;left:1000px;top:0;}
+.list_all .box{width: 980px;height: 300px;margin: 0 auto;position: relative;overflow: hidden;}
+.list_all .imgbox a{width: 1000px;height: 300px;position: absolute;left:1000px;top:0;}
 .list_all .imgbox a:nth-child(1){left:0;}
 .list_all .imgbox img{width: 1000px;height: 300px;}
 
@@ -74,7 +77,30 @@
 .list_all #left{left:0;}
 .list_all #right{right: 0;}
 
-.list{  position: absolute;left: 480px;bottom: 100px; display: flex;margin-top: -40px;}
-.list span{width: 15px;height: 15px;border-radius: 50%;background-color: #eee;margin: 0 5px;}
+.list{ 
+     position: absolute;left: 450px;bottom: 0px; display: flex;margin-top: -40px;
+    }
+.list span{
+    width: 15px;height: 15px;border-radius: 50%;background-color: #eee;margin: 0 5px;
+}
 .list span.active{background: #f54401;}
 
+/* list之轮播图下面的图片 */
+.list_all .list_box{
+    width: 980px;height: 200px;float: right;
+}
+.list_all .list_box img{
+    width: 324px;border-left: solid 2px #fff; height: 200px;float: left;
+}
+
+
+/* haiwai */
+.haiwai{width: 1200px;margin: 0 auto;}
+.haiwai li{height: 90px;float: left;color: #777;margin-left: 55px; }
+.haiwai li .iconfont{font-size: 40px;vertical-align: middle; }
+.haiwai li i{font-size: 14px;padding-top: 20px;line-height: 90px;margin-left: 3px;}
+.haiwai li .iconfont1{color: #1e88fe;}
+.haiwai li .iconfont2{color: #fcbd00;}
+.haiwai li .iconfont3{color: #f9312a;}
+.haiwai li .iconfont4{color: #000;}
+.haiwai li .iconfont5{color: #35cd68;}
