@@ -111,7 +111,7 @@ exports.htmlJsCssStatic = gulp.parallel(htmlFn,jsFn,cssFn,copyFileFn,indexFn);
 function watchAllFn(qwe){
     gulp.watch("./src/index.html",indexFn);
     gulp.watch("./src/css/**/*",cssFn);
-    gulp.watch("./src/es6/**/*",jsFn);
+    gulp.watch("./src/js/**/*",jsFn);
     gulp.watch("./src/pages/**/*",htmlFn);
     gulp.watch("./src/static/**/*",copyFileFn);
     gulp.watch("./src/sass/**/*",sassFn);

@@ -3,20 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>快乐淘-全球海外电商直购平台-轻奢海淘电商</title>
+    <title>海淘易购-全球海外电商直购平台-轻奢海淘电商</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/public.css">
 </head>
 <body>
-    <div class="banner">
-        <div class="left"><a href="#">收藏淘乐乐</a> &nbsp;| &nbsp;<a href="#">购物攻略&nbsp;</a> <i><span class="iconfont">&#xe630;</span>&nbsp;000-1661888</i>
+    <!-- banner_wrap -->
+    <div class="banner_wrap">
+        <!-- banner -->
+        <div class="banner">
+            <div class="left">
+                <a href="#">收藏海淘易购</a> &nbsp;| &nbsp;<a href="#">购物攻略&nbsp;</a> 
+                <i><span class="iconfont">&#xe630;</span>&nbsp;000-1661888</i>
+            </div>
+            
+            <div class="right">
+                <a href="#">登录&nbsp;&nbsp;</a>
+                <a href="#"><span class="span">注册送88元&nbsp;</span></a> &nbsp;| &nbsp;<a href="#"><span class="iconfont">&#xe60e;</span>&nbsp;购物车<i class="i">0</i>件商品&nbsp;</a>  <a href="#">我的订单</a>
+            </div>
+        </div> 
+    </div>
+
+
+    <!-- top -->
+    <div class="top">
+        <img src="static/logo.png" alt="">
+        <div class="logo">
+            <p>海淘易购</p>
+            <p>HTYG.COM</p>
         </div>
-        
-        <div class="right"><a href="#">登录&nbsp;&nbsp;</a> <a href="#"><span class="span">注册送88元&nbsp;</span></a> &nbsp;| &nbsp;<a href="#">购物车0件商品&nbsp;</a>  <a href="#">我的订单</a>
+        <div class="search">
+            <input type="text " placeholder="输入海外商品网址或关键词，见证奇迹一刻！">
+            <button class="btn">搜索</button>
+            <ul>
+                <li>热门：</li>
+                <li><a href="#">美亚&nbsp;/&nbsp;</a></li>
+                <li><a href="#">日亚&nbsp;/&nbsp;</a></li>
+                <li><a href="#">6pm&nbsp;/&nbsp;</a></li>
+                <li><a href="#">卡特&nbsp;/&nbsp;</a></li>
+                <li><a href="#">拉夫劳伦&nbsp;/&nbsp;</a></li>
+                <li><a href="#">zappos&nbsp;/&nbsp;</a></li>
+                <li><a href="#">维密&nbsp;/&nbsp;</a></li>
+                <li><a href="#">橘润&nbsp;/&nbsp;</a></li>
+                <li><a href="#">凯特丝蓓&nbsp;/&nbsp;</a></li>
+                <li><a href="#">shopbop</a></li>
+                <p><a href="#">使用教程</a></p>
+                <p><a href="#">更多&nbsp;|&nbsp;</a></p>
+            </ul>
         </div>
     </div>
-    <div class="top"></div>
-    <div class="nav"></div>
-    <div class="list"></div>
+
+
+
+
+    <!-- nav_wrap -->
+    <div class="nav_wrap">
+        <!-- nav -->
+        <div class="nav">
+            <div class="box"><a href="#">商品分类列表</a></div>
+            <ul>
+                <li><a href="#">启航</a></li>
+                <li><a href="#">每日专题</a></li>
+                <li><a href="#">优选</a></li>
+                <li><a href="#">一键购</a></li>
+                <li><a href="#">品牌街</a></li>
+                <li><a href="#">手机客户端</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- list_wrap -->
+    <div class="list_wrap">
+
+        <!-- list -->
+        <div class="list_all">
+            <ul>
+                <li><p>服饰鞋包</p><i>女包</i><i>男士运动鞋</i><i>POLO衫</i></li>
+               
+                <li><p>美容个护</p><i>眼霜</i><i>洁面仪</i><i>面霜</i><i>彩妆</i></li>
+               
+                <li><p>食品保健</p><i>日本零食</i><i>减肥瘦身</i></li>
+                
+                <li><p>母婴玩具</p><i>洗护用品</i><i>玩具</i><i>奶瓶</i></li>
+                
+                <li><p>生活家居</p><i>保温杯</i><i>滤水器</i><i>创意厨具</i></li>
+               
+                <li><p>运动户外</p><i>男士压缩衣</i><i>户外服饰</i></li>
+               
+                <li><p>精品腕表</p><i>男士手表</i><i>女士手表</i></li>
+               
+                <li><p>电子数码</p><i>耳机</i><i>笔记本</i><i>手机</i></li>
+            </ul>
+            
+        <!-- 轮播图部分 -->
+        <div class="box banner1">
+            <div class="imgbox">
+                <a href="#"><img src="static/1.jpg" alt=""></a>
+                <a href="#"><img src="static/2.jpg" alt=""></a>
+                <a href="#"><img src="static/3.jpg" alt=""></a>
+            </div>
+            <div class="btns">
+                <input type="button" id="left" value="<<<">
+                <input type="button" id="right" value=">>>">
+            </div>
+        </div>
+    
+        <div class="box banner2">
+            <div class="imgbox">
+                <a><img src="../img/banner1.jpg" alt=""></a>
+                <a><img src="../img/banner2.jpg" alt=""></a>
+                <a><img src="../img/banner3.jpg" alt=""></a>
+            </div>
+        </div>
+
+        </div>
+    </div>
 </body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.banner.1.0.js"></script>
+<script>
+        $(".banner1").banner({
+            img:$(".banner1").children(".imgbox").find("a"),
+            left:$(".banner1").find("#left"),
+            right:$(".banner1").find("#right"),
+            list:true,
+            autoPlay:true,
+            delayTime:3000,
+            moveTime:300
+        })
+        
+        $(".banner2").banner({
+            img:$(".banner2").children(".imgbox").find("a"),
+            list:false
+        });
+
+</script>
 </html>
