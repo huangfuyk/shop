@@ -1,0 +1,142 @@
+{
+  "id": "1719920",
+  "name": "qf_shop",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "136451",
+      "name": "7天无理由退换货-1",
+      "font_class": "7tianwuliyoutuihuanhuo1",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "335676",
+      "name": "闪电",
+      "font_class": "shandian",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "436068",
+      "name": "正品保证",
+      "font_class": "2",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "836537",
+      "name": "facebook",
+      "font_class": "facebook",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "933713",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "2674878",
+      "name": "箭头 上",
+      "font_class": "jiantoushang",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "2678618",
+      "name": "免费",
+      "font_class": "mianfei",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "4185994",
+      "name": "银行卡",
+      "font_class": "yinhangqia",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "4276982",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "5201582",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e6e3",
+      "unicode_decimal": 59107
+    },
+    {
+      "icon_id": "5327437",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "5387627",
+      "name": "美元",
+      "font_class": "meiyuan",
+      "unicode": "eb1a",
+      "unicode_decimal": 60186
+    },
+    {
+      "icon_id": "6249004",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "7131912",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e742",
+      "unicode_decimal": 59202
+    },
+    {
+      "icon_id": "7884841",
+      "name": "指标追踪",
+      "font_class": "zhibiaozhuizong",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "11177627",
+      "name": "购物车",
+      "font_class": "ziyuan",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "11372714",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    },
+    {
+      "icon_id": "11756447",
+      "name": "飞机",
+      "font_class": "V",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
+    },
+    {
+      "icon_id": "12797032",
+      "name": "售后",
+      "font_class": "shouhou",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+html body {
+  width: 1200px;
+  margin: 0 auto; }
+
+/* iconfont */
+@font-face {
+  font-family: 'iconfont';
+  src: url("../fonts/iconfont.eot");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2") format("woff2"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* banner */
+.banner {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f8f8fa;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px; }
+
+.banner a {
+  color: #666; }
+
+.banner i {
+  color: #ff7800; }
+
+.banner .left {
+  float: left; }
+
+.banner .right {
+  float: right; }
+
+.banner .right .span {
+  color: #ff0000; }
+
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend, figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
+html {
+  overflow-x: hidden; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6, strong, b {
+  font-weight: normal; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 12px; }
+
+input, a {
+  outline: none; }
+
+em, i {
+  font-style: normal; }
+
+.clean:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
