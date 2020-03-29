@@ -51,7 +51,7 @@
      }
 /* nav */
 .nav{margin: 0 auto; width: 1200px;}
-.nav .box a{font-size: 16px;color: #fff;float: left;line-height: 40px;margin-left: 30px;}
+.nav .box a{font-size: 16px;color: #fff;float: left;line-height: 40px;margin-left: 55px;}
 .nav ul{margin-left: 230px;}
 .nav ul li a{float: left;font-size: 16px;color: #fff;line-height: 39px;width: 130px;text-align: center;}
 .nav ul li a:hover{background-color:#343232;}
@@ -94,7 +94,7 @@
 }
 
 
-/* haiwai */
+/* 海外正品*/
 .haiwai{width: 1200px;margin: 0 auto;}
 .haiwai li{height: 90px;float: left;color: #777;margin-left: 55px; }
 .haiwai li .iconfont{font-size: 40px;vertical-align: middle; }
@@ -104,3 +104,62 @@
 .haiwai li .iconfont3{color: #f9312a;}
 .haiwai li .iconfont4{color: #000;}
 .haiwai li .iconfont5{color: #35cd68;}
+
+/* 信息头 */
+.infoheard_wrap{width: 1200px; margin: 0 auto; height: 32px;margin-top: 100px;}
+.infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px;margin-top: -5px;text-align: center;}
+.infoheard_wrap i{float: right;font-size: 16px;text-decoration: underline;margin-right: 20px;}
+/* 服饰鞋包 */
+.cloth{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.cloth .cloth_l{width: 250px;height:465px;float: left; }
+.cloth .cloth_r{width: 940px;float: left;}
+.cloth .cloth_r img{width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.cloth .cloth_r .img{width: 340px;height: 225px;}
+.cloth .cloth_r img:hover{opacity: 0.5;}
+
+/* 信息头 */
+.infoheard_all{height: 32px;width: 225px;border: solid 1px #000; margin: 30px auto 20px;}
+.infoheard_all{ text-align: center;line-height: 32px;font-size: 20px;}
+/* 美容个护 */
+.beautify{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.beautify .beautify_l{width: 250px;height:465px;float: left; }
+.beautify .beautify_r{width: 940px;float: left;}
+.beautify .beautify_r img{ width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.beautify .beautify_r .img{width: 340px;height: 225px;}
+.beautify .beautify_r img:hover{opacity: 0.5;}
+/* 食品保健 */
+.heath{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.heath .heath_l{width: 250px;height:465px;float: left; }
+.heath .heath_r{width: 940px;float: left;}
+.heath .heath_r img{ width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.heath .heath_r .img{width: 340px;height: 225px;}
+.heath .heath_r img:hover{opacity: 0.5;}
+/* 运动户外 */
+.sport{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.sport .sport_l{width: 250px;height:465px;float: left; }
+.sport .sport_r{width: 940px;float: left;}
+.sport .sport_r img{ width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.sport .sport_r .img{width: 340px;height: 225px;}
+.sport .sport_r img:hover{opacity: 0.5;}
+
+/* 母婴玩具 */
+.play{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.play .play_l{width: 250px;height:465px;float: left; }
+.play .play_r{width: 940px;float: left;}
+.play .play_r img{ width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.play .play_r .img{width: 340px;height: 225px;}
+.play .play_r img:hover{opacity: 0.5;}
+/* 生活家居 */
+.live{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.live .live_l{width: 250px;height:465px;float: left; }
+.live .live_r{width: 940px;float: left;}
+.live .live_r img{  width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.live .live_r .img{width: 340px;height: 225px;}
+.live .live_r img:hover{opacity: 0.5;}
+/* 精品腕表 */
+.jwatch{height: 465px;width: 1200px;  margin: 15px auto  ;}
+.jwatch .jwatch_l{width: 250px;height:465px;float: left; }
+.jwatch .jwatch_r{width: 940px;float: left;}
+.jwatch .jwatch_r img{  width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
+.jwatch .jwatch_r .img{width: 340px;height: 225px;}
+.jwatch .jwatch_r img:hover{opacity: 0.5;}
