@@ -64,3 +64,44 @@ em,i{font-style: normal;}
 
 }
 
+
+/* 底部bottom */
+.bottom_wrap{height: 300px;background-color: #1c1d1e;border-top: solid 20px #f8f8fa;}
+.bottom_wrap .bottom{height: 280px;width: 1200px;  margin: 0 auto;}
+.bottom_wrap .bottom .ul{ width: 1200px;height: 110px;border-bottom: solid 1px #333;
+ }
+.bottom_wrap .bottom .ul{
+ 
+   li{color: #666;width: 120px;height: 100px; text-align: center;float: left;margin: 0 14px;}
+   .p1{height: 50px;width: 50px;background-color: #333;border-radius: 50%;text-align: center;margin-left: 50px;margin-top: 10px;}
+   .iconfont{font-size: 30px;font-weight: 900;line-height: 50px;
+   }
+   .p2{margin-top: 15px; margin-left: 30px;}
+}
+.bottom_wrap .bottom .ul li:hover .p2{color: #eee;}
+
+// 底部下半部
+.bottom_wrap .bottom .erweima{width: 120px;height: 120px;float: left;margin: 20px 50px;}
+
+.bottom_wrap .bottom .ul1{margin-left: 30px;float: left;}
+.bottom_wrap .bottom .ul1 li{margin:7px;color: #666;margin-left: 50px;}
+.bottom_wrap .bottom .ul1 li:hover{color: #eee;}
+.bottom_wrap .bottom .ul1 .li1{color: #eee;font-size: 15px;margin-top: 20px;}
+.bottom_wrap .bottom .ul1 li span{ font-size: 25px;margin-left: 18px;}
+
+// copyright
+.bottom_wrap .bottom .copyright{color: #666;text-align: center;margin-top: 20px;} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

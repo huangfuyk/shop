@@ -107,8 +107,8 @@
 
 /* 信息头 */
 .infoheard_wrap{width: 1200px; margin: 0 auto; height: 32px;margin-top: 100px;}
-.infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px;margin-top: -5px;text-align: center;}
-.infoheard_wrap i{float: right;font-size: 16px;text-decoration: underline;margin-right: 20px;}
+.infoheard_wrap .infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px;margin-top: -5px;text-align: center;}
+.infoheard_wrap i{float: right;font-size: 16px;text-decoration: underline;margin-right: 20px;margin-top: 10px;}
 /* 服饰鞋包 */
 .cloth{height: 465px;width: 1200px;  margin: 15px auto  ;}
 .cloth .cloth_l{width: 250px;height:465px;float: left; }
@@ -118,8 +118,9 @@
 .cloth .cloth_r img:hover{opacity: 0.5;}
 
 /* 信息头 */
-.infoheard_all{height: 32px;width: 225px;border: solid 1px #000; margin: 30px auto 20px;}
-.infoheard_all{ text-align: center;line-height: 32px;font-size: 20px;}
+.infoheard_all{width: 1200px; margin: 0 auto; height: 32px;margin-top: 40px;}
+.infoheard_all .infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px;margin-top: -5px;text-align: center;}
+.infoheard_all i{float: right;font-size: 16px;text-decoration: underline;margin-right: 20px;margin-top: 10px;}
 /* 美容个护 */
 .beautify{height: 465px;width: 1200px;  margin: 15px auto  ;}
 .beautify .beautify_l{width: 250px;height:465px;float: left; }
@@ -163,3 +164,21 @@
 .jwatch .jwatch_r img{  width: 190px;height: 225px; float: left;margin-left: 7px;margin-bottom: 8px;}
 .jwatch .jwatch_r .img{width: 340px;height: 225px;}
 .jwatch .jwatch_r img:hover{opacity: 0.5;}
+/* 精心推荐 */
+.tuijian_wrap{height: 30px;width: 1200px; margin: 30px auto 10px;}
+.tuijian_wrap .tuijian{font-size: 25px; margin-left: 10px;}
+.tuijian_wrap em{font-size: 20px;margin:0 5px 0 5px;}
+.tuijian_wrap i{font-size: 16px;}
+.tuijian_wrap .i{font-size: 16px;float: right;text-decoration: underline;margin-right: 20px;}
+
+.foo{height: 260px;width: 1190px; margin: 0 auto;border-top: solid 1px gainsboro; }
+.foo li{width: 198px;height: 260px; overflow: hidden;float: left;}
+.foo li img {width: 130px;height: 140px;margin:20px 35px;}
+.foo p{text-align: center;margin-bottom: 16px;}
+.foo span {font-size: 16px;font-weight: 900;color: #f54401;text-align: center;margin-left: 40px;}
+.foo i{background-color: #f54401;color: #fff;width: 20px;height: 18px;padding: 0 8px;margin-left: 5px;font-size: 14px;}
+.foo li:hover p{color: #f54401;}
+
+
+
+
