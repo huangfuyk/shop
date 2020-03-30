@@ -62,11 +62,13 @@
 /* list_all */
 .list_all{width: 1200px;margin: 0 auto;}
 .list_all ul{width: 220px;height:500px;background-color: #000;float: left;}
-.list_all ul li{color: #fff;width: 220px;height: 63px;}
+.list_all ul li{ width: 220px;height: 63px;text-align: center;line-height: 25px;overflow: hidden;}
+.list_all ul li a{ color: #eee; }
 .list_all ul li:nth-child(2n-1){background-color: #202020;}
-.list_all ul li:hover{background-color: #fff;color: #000;}
-.list_all ul li p{padding: 10px 40px;font-weight: 900;font-size: 16px;}
-.list_all ul li i{font-size: 12px; font-weight:500;margin-left: 20px;}
+.list_all ul li:hover {background-color: #fff;}
+.list_all ul li:hover a{color: #000;}
+.list_all ul li p{height: 25px;width: 70px; font-weight: 900;font-size: 16px; margin :5px 66px;}
+.list_all ul li i{font-size: 12px; font-weight:500;margin:0 10px;}
 /* list之轮播图 */
 .list_all .box{width: 980px;height: 300px;margin: 0 auto;position: relative;overflow: hidden;}
 .list_all .imgbox a{width: 1000px;height: 300px;position: absolute;left:1000px;top:0;}

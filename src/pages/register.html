@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册-全球海外电商直购平台-海淘易购-惠购全球</title>
+    <style>
+        
+    </style>
+</head>
+<link rel="stylesheet" href="../css/register.css">
+<link rel="stylesheet" href="../css/public.css">
+<body>
+    
+    
+    <div class="box_wrap">
+        <div id="box">
+            <p class="p1">注册成功后，立即送88元！</p>
+            <input type="text" value="" id="user" placeholder="请输入您的用户名"><br>
+            <input type="text" value="" id="pass" placeholder="请输入6~30位数字、字母或符号"><br>
+
+            <input type="text" value="" id="tel" placeholder="请输入手机号码"><br>
+            <input type="text" value="" id="email" placeholder="请输入邮箱，用于找回账户密码"><br>
+            
+            <i><a >使用第三方账户注册：</a></i><br>
+            
+            <span class="iconfont icon1"><a href="#">&#xe631;</a></span>
+            <span class="iconfont icon2"><a href="#">&#xe6e3;</a></span>
+            <span class="iconfont icon3"><a href="#">&#xe8bb;</a></span>
+            <span class="iconfont icon4"><a href="#">&#xe6e0;</a></span>
+            <input type="button" value="注册" id="submit">
+            <h1><a href="../pages/login.html">已有账号,立即登录</a></h1>
+            <h2><a href="../index.html">回到首页</a></h2>
+            <span class="msg"></span>
+        </div>
+        <p class="p2">Copyright©2010-2020 北京海淘易购科技有限公司版权所有 京ICP备66668888号-1 京公网安备1122334455667788号</p>
+    </div>
+    </body>
+<script src="../ajax-promise.js"></script>
+<script>
+    class Register{
+        constructor(){
+            // 选择各种元素
+            this.user = document.getElementById("user");
+            this.pass = document.getElementById("pass");
+            this.tel = document.getElementById("tel");
+            this.email = document.getElementById("email");
+            this.submit = document.getElementById("submit");
+            this.msg = document.querySelector(".msg");
+            // 提前准备接口
+            this.url = "http://api.icodeilife.cn:81/user";
+            // 绑定事件
+            this.addEvent()
+        }
+        addEvent(){
+            var that = this;
+            this.submit.onclick = function(){
+                // 注册请求之前获取输入框内容
+                that.u = that.user.value;
+                that.p = that.pass.value;
+                that.t = that.tel.value;
+                that.e = that.email.value;
+                // 开启请求
+                that.load();
+            }
+        }
+        load(){
+            ajax({
+                url:this.url,
+                data:{      // 根据接口文档，发送数据
+                    type: "register",
+                    user: this.u,
+                    pass: this.p,
+                    tel: this.t,
+                    email: this.e
+                }
+            }).then((res)=>{
+                // 请求成功后，查看数据，处理数据
+                // console.log(res);
+                this.res = JSON.parse(res);
+                // 渲染结果
+                this.display();
+            })
+        }
+        display(){
+            // 根据成功或失败，决定后续操作
+            if(this.res.code == 1){
+                this.msg.innerHTML = this.res.msg + "，将跳转到登录页";
+                setTimeout(()=>{
+                    location.href = "../pages/login.html";
+                },2000);
+            }else{
+                this.msg.innerHTML = this.res.msg;
+            }
+        }
+    }
+
+    new Register;
+</script>
+</html>

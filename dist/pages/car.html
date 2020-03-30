@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Document</title><style>.welcome{display: none}</style></head><body><h2>这是购物车</h2><div class="login"><a href="register.html">注册</a> <a href="login.html">登录</a></div><div class="welcome"><p>欢迎最贵的VIP<mark><em id="userName">XXX</em></mark>进入本网站，<span id="logout">注销</span></p><h2>这是购物车信息</h2></div></body><script>class Index{
+        constructor(){
+            this.login = document.querySelector(".login");
+            this.welcome = document.querySelector(".welcome");
+            this.logout = document.getElementById("logout");
+            this.uName = document.getElementById("userName")
+
+            // 对于需要验证是否登录的页面来说，应该立即获取是否登录的信息
+            this.init();
+            this.addEvent();
+        }
+        init(){
+            // 获取之后，简单处理数据
+            this.m = sessionStorage.getItem("userMsg");
+            this.m = this.m ? JSON.parse(this.m) : {};
+            // 如果有登录成功后的信息
+            if(this.m.user){
+                // 显示登录的用户名
+                this.uName.innerHTML = this.m.user;
+                // 显示欢迎信息
+                this.login.style.display = "none";
+                // 隐藏登录注册操作
+                this.welcome.style.display = "block";
+            }else{
+                location.href = "login.html";
+            }
+        }
+        addEvent(){
+            // 注销功能，就是抹掉登录成功之后的信息
+            this.logout.onclick = function(){
+                sessionStorage.removeItem("userMsg");
+                location.href = "login.html";
+            }
+        }
+    }
+    new Index;
+
+    // 当前页面的验证功能，需要用到 所有需要判断用户是否登录 的页面，如：购物车....</script></html>

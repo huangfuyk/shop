@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>登录-全球海外电商直购平台-海淘易购-惠购全球</title></head><link rel="stylesheet" href="../css/login.css"><link rel="stylesheet" href="../css/public.css"><body><div class="box_wrap"><div id="box"><p class="p1">密码登录</p><input type="text" id="user" placeholder="请输入您的用户名"><br><input type="text" id="pass" placeholder="请输入您的密码"><br><i><a href="#">忘记密码</a></i><br><input type="button" value="登录" id="submit"> <span class="iconfont"><a href="#">&#xe631;</a></span> <span class="iconfont"><a href="#">&#xe6e3;</a></span> <span class="iconfont"><a href="#">&#xe8bb;</a></span> <span class="iconfont"><a href="#">&#xe6e0;</a></span><h1><a href="register.html">免费注册</a></h1><h2><a href="../index.html">回到首页</a></h2><span class="msg"></span></div><p class="p2">Copyright©2010-2020 北京海淘易购科技有限公司版权所有 京ICP备66668888号-1 京公网安备1122334455667788号</p></div></body><script src="../ajax-promise.js"></script><script>class Login{
+        constructor(){
+            // 选择各种元素
+            this.user = document.getElementById("user");
+            this.pass = document.getElementById("pass");
+            this.submit = document.getElementById("submit");
+            this.msg = document.querySelector(".msg");
+            // 提前准备接口
+            this.url = "http://api.icodeilife.cn:81/user";
+            // 绑定事件
+            this.addEvent()
+        }
+        addEvent(){
+            var that = this;
+            this.submit.onclick = function(){
+                // 注册请求之前获取输入框内容
+                that.u = that.user.value;
+                that.p = that.pass.value;
+                // 开启请求
+                that.load();
+            }
+        }
+        load(){
+            ajax({
+                url:this.url,
+                data:{      // 根据接口文档，发送数据
+                    type: "login",
+                    user: this.u,
+                    pass: this.p
+                }
+            }).then((res)=>{
+                // 请求成功后，查看数据，处理数据
+                // console.log(res);
+                this.res = JSON.parse(res);
+                // 渲染结果
+                this.display();
+            })
+        }
+        display(){
+            switch(this.res.code){
+                case 0:
+                    this.msg.innerHTML = this.res.msg + "，请先注册";
+                    setTimeout(() => {
+                        location.href = "register.html";
+                    }, 2000);
+                    break;
+                case 1:
+                    this.msg.innerHTML = "登录成功，将跳转到首页";
+                    setTimeout(() => {
+                        location.href = "../index.html";
+                    }, 2000);
+
+                    sessionStorage.setItem("userMsg",JSON.stringify(this.res.msg));
+                    
+                    break;
+                case 2:
+                    this.msg.innerHTML = this.res.msg + "，请重新输入";
+                    this.user.value = this.pass.value = "";
+                    this.user.focus();
+            }
+        }
+    }
+
+    new Login;</script></html>
