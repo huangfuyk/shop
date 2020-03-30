@@ -15,11 +15,13 @@
     <div class="box_wrap">
         <div id="box">
             <p class="p1">注册成功后，立即送88元！</p>
-            <input type="text" value="" id="user" placeholder="请输入您的用户名"><br>
-            <input type="text" value="" id="pass" placeholder="请输入6~30位数字、字母或符号"><br>
+            <input type="text" value="" id="user" placeholder="请输入4~12位数字、字母或符号"><span class="jiance1"></span><br>
 
-            <input type="text" value="" id="tel" placeholder="请输入手机号码"><br>
-            <input type="text" value="" id="email" placeholder="请输入邮箱，用于找回账户密码"><br>
+            <input type="text" value="" id="pass" placeholder="必须包含数字、大写和小写字母且为12位"><span class="jiance2"></span><br>
+
+            <input type="text" value="" id="tel" placeholder="请输入手机号码"><span class="jiance3"></span><br>
+
+            <input type="text" value="" id="email" placeholder="请输入邮箱，用于找回账户密码"><span class="jiance4"></span><br>
             
             <i><a >使用第三方账户注册：</a></i><br>
             
@@ -36,8 +38,10 @@
     </div>
     </body>
 <script src="../ajax-promise.js"></script>
+<script src="../js/jquery.js"></script>
 <script>
     class Register{
+        
         constructor(){
             // 选择各种元素
             this.user = document.getElementById("user");
@@ -49,18 +53,78 @@
             // 提前准备接口
             this.url = "http://api.icodeilife.cn:81/user";
             // 绑定事件
-            this.addEvent()
+            this.addEvent();
+            this.regular();
+            this.ok1 = false;    
+            this.ok2 = false;    
+            this.ok3 = false;    
+            this.ok4 = false;    
         }
+        regular(){
+
+            var that = this;
+            $("#user").focusout(function(){
+                var reg = /^[\w]{4,12}$/;
+                if(reg.test($("#user").val())){
+                   $(".jiance1").css({"color":"green","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式正确");
+                   that.ok1 = true;
+                }else{
+                    $(".jiance1").css({"color":"red","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式错误");
+                    // $("#user").focus();// 如果不符合要求，依旧在此行
+                }
+            });
+
+
+            $("#pass").focusout(function(){
+                var reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{6,12}$/;
+                if(reg.test($("#pass").val())){
+                   $(".jiance2").css({"color":"green","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式正确");
+                   that.ok2 = true;
+                }else{
+                    $(".jiance2").css({"color":"red","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式错误");
+                    // $("#user").focus();// 如果不符合要求，依旧在此行
+                }
+            })
+            
+            $("#tel").focusout(function(){
+                var reg = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9]|17[0-9])\d{8}$/;
+                if(reg.test($("#tel").val())){
+                   $(".jiance3").css({"color":"green","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式正确");
+                   that.ok3 = true;
+                }else{
+                    $(".jiance3").css({"color":"red","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式错误");
+                    // $("#user").focus();// 如果不符合要求，依旧在此行
+                }
+            })
+
+            $("#email").focusout(function(){
+                var reg = /^[0-9a-zA-Z]{4,9}@[\da-zA-Z]{2,9}\.[a-zA-Z]{2,4}$/;
+                if(reg.test($("#email").val())){
+                   $(".jiance4").css({"color":"green","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式正确");
+                   that.ok4 = true;
+                }else{
+                    $(".jiance4").css({"color":"red","font-family":"幼圆","font-size":"11px","font-weight":"700"}).text("格式错误");
+                    // $("#user").focus();// 如果不符合要求，依旧在此行
+                }
+            })
+
+        }
+
+
         addEvent(){
             var that = this;
             this.submit.onclick = function(){
-                // 注册请求之前获取输入框内容
-                that.u = that.user.value;
-                that.p = that.pass.value;
-                that.t = that.tel.value;
-                that.e = that.email.value;
-                // 开启请求
-                that.load();
+                if(that.ok1 && that.ok2 && that.ok3 && that.ok4){
+                    // 注册请求之前获取输入框内容
+                    that.u = that.user.value;
+                    that.p = that.pass.value;
+                    that.t = that.tel.value;
+                    that.e = that.email.value;
+                    // 开启请求
+                    that.load();
+                }else{
+                    return false;
+                }
             }
         }
         load(){
@@ -84,10 +148,10 @@
         display(){
             // 根据成功或失败，决定后续操作
             if(this.res.code == 1){
-                this.msg.innerHTML = this.res.msg + "，将跳转到登录页";
-                setTimeout(()=>{
+                // this.msg.innerHTML = this.res.msg + "，将跳转到登录页";
+                // setTimeout(()=>{
                     location.href = "../pages/login.html";
-                },2000);
+                // },2000);
             }else{
                 this.msg.innerHTML = this.res.msg;
             }

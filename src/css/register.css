@@ -1,7 +1,7 @@
 body{background-color: #fdf8f5;}
 .box_wrap{background-image: url(../static/login.jpg);width: 1200px;height: 550px;margin: 0 auto;position: relative;}
 
-#box{width: 350px;height: 450px;background-color:#fff; margin: 0 auto; border-radius: 5px;  box-shadow:0 0 3px 5px rgba(200, 200, 200, 0.2);position: absolute;top: 80px;left: 760px;overflow: hidden;}
+#box{width: 350px;height: 450px;background-color:#fff; margin: 0 auto; border-radius: 5px;  box-shadow:0 0 3px 5px rgba(200, 200, 200, 0.2);position: absolute;top: 80px;left: 800px;overflow: hidden;}
 
 .p1{font-size: 16px;font-weight: 900;margin-left: 20px;margin-top: 20px;color: #f54401;}
 
@@ -9,9 +9,9 @@ body{background-color: #fdf8f5;}
 
 #box i{font-style: normal;margin-left: 20px; }
 #box i a{color: #aaa;font-size: 12px; text-decoration: none; }
-#user,#pass,#tel,#email{border:solid 2px #ddd; border-radius: 5px;height: 30px;width: 300px;padding-left: 10px;font-size: 14px;margin-top: 20px;margin-left: 18px;margin-bottom: 5px;}
+#user,#pass,#tel,#email{border:solid 2px #ddd; border-radius: 5px;height: 30px;width: 270px;padding-left: 10px;font-size: 14px;margin-top: 20px;margin-left: 18px;margin-bottom: 5px;}
 
-#submit{width: 310px;height: 40px;background-color: #f54401;border: solid 2px #ddd;border-radius: 5px;margin: 10px 20px;font-size: 16px;font-weight: 900;color: #fff;}
+#submit{width: 280px;height: 40px;background-color: #f54401;border: solid 2px #ddd;border-radius: 5px;margin: 10px 20px;font-size: 16px;font-weight: 900;color: #fff;}
 
 #box  .iconfont{width: 30px;height: 30px; display: block;  font-size: 20px;border-radius: 50%;text-align: center;line-height:30px;margin-left: 20px;margin-top: 10px;float: left;}
 #box .iconfont a{color: #fff}
@@ -20,10 +20,12 @@ body{background-color: #fdf8f5;}
 #box .icon3{background-color: pink;}
 #box .icon4{background-color: royalblue;}
 
-h1{font-size: 12px;position: absolute;left: 220px;bottom: 30px;}
+h1{font-size: 12px;position: absolute;left: 200px;bottom: 30px;}
 h1:hover{text-decoration: underline;}
 
 h2{font-size: 12px;position: absolute;left: 30px;bottom: 30px;}
 h2:hover{text-decoration: underline;}
 
 .msg{font-size: 14px; position: absolute;left: 100px;bottom: 8px;color: darkorange;}
+
+/* .jiance{color: #f54401;} */

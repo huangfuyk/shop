@@ -76,10 +76,10 @@
                     }, 2000);
                     break;
                 case 1:
-                    this.msg.innerHTML = "登录成功，将跳转到首页";
-                    setTimeout(() => {
+                    // this.msg.innerHTML = "登录成功，将跳转到首页";
+                    // setTimeout(() => {
                         location.href = "../index.html";
-                    }, 2000);
+                    // }, 2000);
 
                     sessionStorage.setItem("userMsg",JSON.stringify(this.res.msg));
                     
