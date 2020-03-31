@@ -6,6 +6,10 @@
     <title>海淘易购-全球海外电商直购平台-轻奢海淘电商</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/public.css">
+    <style>
+        .welcome{display: none}
+
+    </style>
 </head>
 <body>
     <!-- banner_wrap -->
@@ -18,8 +22,19 @@
             </div>
             
             <div class="right">
-                <a href="pages/login.html">登录&nbsp;&nbsp;</a>
-                <a href="pages/register.html"><span class="span">注册送88元&nbsp;</span></a> &nbsp;| &nbsp;<a href="#"><span class="iconfont">&#xe60e;</span>&nbsp;购物车<i class="i">0</i>件商品&nbsp;</a>  <a href="#">我的订单</a>
+
+                <a href="pages/login.html" class="login">登录&nbsp;&nbsp;</a>
+
+                <a href="pages/register.html" class="login1" ><span class="span ">注册送88元&nbsp;</a></span> &nbsp;| &nbsp;
+                
+                <div class="welcome">
+                    <span> <d>欢迎您，</d> <em id="userName"></em> <span id="logout"><a href="#">&nbsp;&nbsp;安全退出</span></a></span>
+                </div>
+
+                <a href="#">
+                    <span class="iconfont">&#xe60e;</span>&nbsp;购物车<i class="i">0</i>件商品&nbsp;
+                </a>  
+                <a href="#">我的订单</a>
             </div>
         </div> 
     </div>
@@ -414,6 +429,45 @@
         });
         
             
+
+        class Index{
+        constructor(){
+            this.login = document.querySelector(".login");
+            this.login1 = document.querySelector(".login1");
+            this.welcome = document.querySelector(".welcome");
+            this.logout = document.getElementById("logout");
+            this.uName = document.getElementById("userName")
+
+            // 对于需要验证是否登录的页面来说，应该立即获取是否登录的信息
+            this.init();
+            this.addEvent();
+        }
+        init(){
+            // 获取之后，简单处理数据
+            this.m = sessionStorage.getItem("userMsg");
+            this.m = this.m ? JSON.parse(this.m) : {};
+            // 如果有登录成功后的信息
+            if(this.m.user){
+                // 显示登录的用户名
+                this.uName.innerHTML = this.m.user;
+                // 显示欢迎信息
+                this.login.style.display = "none";
+                this.login1.style.display = "none";
+                // 隐藏登录注册操作
+                this.welcome.style.display = "block";
+            }
+        }
+        addEvent(){
+            // 注销功能，就是抹掉登录成功之后的信息
+            this.logout.onclick = function(){
+                sessionStorage.removeItem("userMsg");
+                location.reload();
+            }
+        }
+    }
+    new Index;
+
+
 
 </script>
 </html>

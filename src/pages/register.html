@@ -148,10 +148,10 @@
         display(){
             // 根据成功或失败，决定后续操作
             if(this.res.code == 1){
-                // this.msg.innerHTML = this.res.msg + "，将跳转到登录页";
-                // setTimeout(()=>{
+                this.msg.innerHTML = this.res.msg + "，将跳转到登录页";
+                setTimeout(()=>{
                     location.href = "../pages/login.html";
-                // },2000);
+                },1500);
             }else{
                 this.msg.innerHTML = this.res.msg;
             }

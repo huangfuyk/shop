@@ -90,6 +90,7 @@ em, i {
   color: #f54401; }
 
 .banner .right {
+  position: relative;
   float: right; }
   .banner .right .span {
     color: #ff0000; }
@@ -98,6 +99,17 @@ em, i {
     font-weight: 900; }
   .banner .right .iconfont {
     font-size: 12px; }
+  .banner .right d {
+    color: #aaa;
+    margin-right: -6px; }
+
+.banner .right .welcome {
+  position: absolute;
+  top: 0;
+  left: -130px; }
+  .banner .right .welcome em {
+    font-size: 12px;
+    color: #666; }
 
 /* 底部bottom */
 .bottom_wrap {
