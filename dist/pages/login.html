@@ -39,7 +39,7 @@
         display(){
             switch(this.res.code){
                 case 0:
-                    this.msg.innerHTML = this.res.msg + "，请先注册";
+                    this.msg.innerHTML = this.res.msg + "，即将跳转注册";
                     setTimeout(() => {
                         location.href = "register.html";
                     }, 2000);

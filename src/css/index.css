@@ -109,7 +109,7 @@
 
 /* 信息头 */
 .infoheard_wrap{width: 1200px; margin: 0 auto; height: 32px;margin-top: 100px;}
-.infoheard_wrap .infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px;margin-top: -5px;text-align: center;}
+.infoheard_wrap .infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px; text-align: center;}
 .infoheard_wrap i{float: right;font-size: 16px;text-decoration: underline;margin-right: 20px;margin-top: 10px;}
 /* 服饰鞋包 */
 .cloth{height: 465px;width: 1200px;  margin: 15px auto  ;}
@@ -121,7 +121,7 @@
 
 /* 信息头 */
 .infoheard_all{width: 1200px; margin: 0 auto; height: 32px;margin-top: 40px;}
-.infoheard_all .infoheard{height: 32px;width: 225px;border: solid 1px #000;    font-size: 20px;float: left; margin-left: 480px;margin-top: -5px;text-align: center;}
+.infoheard_all .infoheard{height: 32px;width: 225px;border: solid 1px #000; font-size: 20px;float: left; margin-left: 480px;text-align: center;}
 .infoheard_all i{float: right;font-size: 16px;text-decoration: underline;margin-right: 20px;margin-top: 10px;}
 /* 美容个护 */
 .beautify{height: 465px;width: 1200px;  margin: 15px auto  ;}

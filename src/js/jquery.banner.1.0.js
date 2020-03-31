@@ -53,8 +53,11 @@
                 }
                 createList(){
                     var str = ``;
-                    for(var i=2;i<this.child.length;i++){
-                        str += `<span index='${i}'>${i+1}</span>`;
+                    for(var i=0;i<this.child.length;i++){
+                        // 圆点内无数字
+                        str += `<span index='${i}'> </span>`;
+                        // 圆点内有数字
+                        // str += `<span index='${i}'>${i+1}</span>`;
                     }
 
                     $(`<div class='list'>${str}</div>`).appendTo(cont);
