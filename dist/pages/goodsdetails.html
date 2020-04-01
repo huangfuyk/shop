@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>海淘易购-商品列表-轻奢海淘电商</title><style></style></head><body><h1>这是商品详情</h1><div class="cont"></div></body><script src="../ajax-promise.js"></script><script>// 难点：两个html如何传递数据，url，使用location解析
+    // console.log(location.search.slice(1).split("=")[1]);
+
+    class Details{
+        constructor(){
+            this.cont = document.querySelector(".cont");
+            this.url = "http://localhost/data/goods.json";
+
+            this.load();
+            this.getId();
+        }
+        getId(){
+            // 获取地址栏的url后拼接的数据
+            this.id = location.search.slice(1).split("=")[1];
+        }
+        load(){
+            // 请求商品数据库：json
+            ajax({
+                url:this.url
+            }).then((res)=>{
+                this.res = JSON.parse(res);
+                this.display();
+            })
+        }
+        display(){
+            // 将接收到的商品id和商品数据中的id作比较
+            this.res.forEach(val => {
+                if(val.goodsId === this.id){
+                    console.log(val);
+                    // 根据val的数据内容化，渲染商品详情页
+                }
+            });
+        }
+    }
+
+    new Details;</script></html>

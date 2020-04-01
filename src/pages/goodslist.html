@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>海淘易购-商品列表-轻奢海淘电商</title>
+    <style>
+        .cont{width:1000px;overflow: hidden;margin: 30px auto;border: solid 1px black;}
+        .cont .goods{width: 250px;float: left;border: solid 1px black;box-sizing: border-box;text-align: center;}
+        .goods img{width: 80%;}
+        .goods span{display: block;margin: 10px 0;}
+        .goods p{margin: 0;height: 40px;line-height: 20px;overflow: hidden;}
+        .goods input{display: block;padding: 20px;margin: 0 auto;font-size: 20px;}
+
+        /* .magnifier .s_box{width:400px;height: 300px;position: absolute;left: 50px;top:100px;}
+        .magnifier .s_box img{width: 400px;height: 300px;}
+        .magnifier .s_box span{width: 130px;height: 100px;background: rgba(200,200,200,0.5);position: absolute;left:0;top:0;display: none;cursor:move;}
+
+        .magnifier .b_box{width: 400px;height: 300px;overflow: hidden;position: absolute;left:500px;top:100px;display: none;}
+        .magnifier .b_box img{width: 1200px;height: 900px;position: absolute;left:0;top:0;}
+
+        .magnifier .list{margin: 0;padding: 0;list-style: none;position: absolute;left:50px;top:430px;}
+        .magnifier .list li{float: left;margin: 0 10px;}
+        .magnifier .list li img{width: 100px;height: 80px;} */
+    </style>
+</head>
+<body>
+    <h2>这是商品列表，点击商品可以打开详情</h2>
+    <div class="cont">
+        <!-- <div class="goods">
+            <div class="magnifier">
+                <div class="s_box">
+                    <img src="../img/large1.jpg" alt="">
+                    <span></span>
+                </div>
+                <div class="b_box">
+                    <img src="../img/large1.jpg" alt="">
+                </div>
+                <ul class="list">
+                    <li><img src="../img/large1.jpg" alt=""></li>
+                    <li><img src="../img/large2.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="../ajax-promise.js"></script>
+<script>
+    class List{
+        constructor(){
+            this.url = "../data/goods.json";
+            this.cont = document.querySelector(".cont");
+
+            this.load();
+        }
+        load(){
+            ajax({
+                url:this.url
+            }).then((res)=>{
+                this.res = JSON.parse(res);
+                this.display();
+            })
+        }
+        display(){
+            // console.log(this.res);
+            let str = "";
+            for(var i=0;i<this.res.length;i++){
+                str += `<div class="goods" index="${this.res[i].goodsId}">
+                            <a href="goodsdetails.html?id=${this.res[i].goodsId}">
+                                <img src="${this.res[i].img.largeImg[0]}" alt="">
+                                <span>${this.res[i].price}</span>
+                                <p>${this.res[i].name}</p>
+                            </a>
+                            <input type="button" value="加入购物车" class="add">
+                        </div>`
+            }
+            this.cont.innerHTML = str;
+        }
+    }
+
+    new List;
+</script>
+</html>

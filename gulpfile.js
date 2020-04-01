@@ -16,6 +16,14 @@ function copyFileFn(){
 }
 exports.copyFile = copyFileFn;
 
+// data的批量转存
+function copyFileFn1(){
+    return gulp.src("./src/data/**/*")
+            .pipe(gulp.dest("./dist/data"))
+}
+exports.copyFile1 = copyFileFn1;
+
+
 // 处理css的指令：压缩，添加兼容前缀
 function cssFn(){
     return gulp.src("./src/css/**/*")
@@ -79,15 +87,15 @@ function serverFn(){
     return gulp.src("./dist")
         .pipe(webserver({
             host:"localhost",
-            port:"8888",
+            port:"8848",
             livereload:true,
             open:"./index.html",
             proxies:[{
                 // source属性用来表示，代理之后的地址
-                // 在前端的ajax内，直接请求：http://localhost:3000/abc
+                // 在前端的ajax内，直接请求：http://localhost:8888/abc
                 source:"/abc",
                 // target属性用来标志要代理的跨域地址
-                target:"https://wanandroid.com/wxarticle/chapters/json"
+                target:"http://localhost/data/goods.json"
             }]
         }))
 }
@@ -114,7 +122,9 @@ function watchAllFn(qwe){
     gulp.watch("./src/js/**/*",jsFn);
     gulp.watch("./src/pages/**/*",htmlFn);
     gulp.watch("./src/static/**/*",copyFileFn);
+    gulp.watch("./src/data/**/*",copyFileFn1);
     gulp.watch("./src/sass/**/*",sassFn);
+    // gulp.watch("./dist",serverFn);
 
     // qwe();
 }

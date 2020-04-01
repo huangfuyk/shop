@@ -1,0 +1,23 @@
+[{
+    "name":"华为 HUAWEI P40 麒麟990 5G SoC芯片 5000万超感知徕卡三摄 30倍数字变焦 6GB+128GB零度白全网通5G手机",
+    "img":{
+        "largeImg":["http://img14.360buyimg.com/n1/jfs/t1/97405/13/17032/133641/5e830d80E92f51635/38efe745c44d63cb.jpg", "http://img14.360buyimg.com/n1/jfs/t1/106620/7/16554/45005/5e7cbd71E0b979447/537ac858f4991a15.jpg", "http://img14.360buyimg.com/n1/jfs/t1/90962/23/16589/54209/5e7cbd71E1389d7de/1a9b05b75ecef6d1.jpg"],
+        "smallImg":["https://img14.360buyimg.com/n5/jfs/t1/97405/13/17032/133641/5e830d80E92f51635/38efe745c44d63cb.jpg", "https://img14.360buyimg.com/n5/jfs/t1/106620/7/16554/45005/5e7cbd71E0b979447/537ac858f4991a15.jpg", "https://img14.360buyimg.com/n5/jfs/t1/90962/23/16589/54209/5e7cbd71E1389d7de/1a9b05b75ecef6d1.jpg"]
+    },
+    "price":"3999.00",
+    "brand":"HUAWEI",
+    "goodsId":"100012014924",
+    "title":"华为P40",
+    "uptime":"2020.4.1"
+},{
+    "name":"RedmiBook 14 锐龙版 全金属超轻薄(AMD Ryzen R5-3500U 8G 512G PCIe 全高清 支持手环疾速解锁 首发小米互传）游戏 银 笔记本电脑 小米 红米",
+    "img":{
+        "largeImg":["http://img13.360buyimg.com/n1/s450x450_jfs/t1/91898/37/411/95533/5dad2ed7E9c7ec367/917836b13ddfec02.jpg", "http://img13.360buyimg.com/n1/s450x450_jfs/t1/85698/29/434/190172/5dad2ed7Eadf073df/06c6f0288b214962.jpg", "http://img13.360buyimg.com/n1/s450x450_jfs/t1/106595/2/391/112789/5dad2ed7Ee89ec9c6/51930d7b36647583.jpg"],
+        "smallImg":["https://img13.360buyimg.com/n5/s54x54_jfs/t1/91898/37/411/95533/5dad2ed7E9c7ec367/917836b13ddfec02.jpg", "https://img13.360buyimg.com/n5/s54x54_jfs/t1/85698/29/434/190172/5dad2ed7Eadf073df/06c6f0288b214962.jpg", "https://img13.360buyimg.com/n5/s54x54_jfs/t1/106595/2/391/112789/5dad2ed7Ee89ec9c6/51930d7b36647583.jpg"]
+    },
+    "price":"3309.00",
+    "brand":"XIAOMI",
+    "goodsId":"100005188613",
+    "title":"XIAOMI笔记本",
+    "uptime":"2020.3.31"
+}] 
