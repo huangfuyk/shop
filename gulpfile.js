@@ -142,7 +142,7 @@ exports.watchAll = watchAllFn;
 
 exports.all = gulp.series(
     
-    gulp.parallel(htmlFn,jsFn,cssFn,copyFileFn,indexFn,sassFn)
+    gulp.parallel(htmlFn,jsFn,cssFn,copyFileFn,copyFileFn1,indexFn,sassFn)
     
     ,
 

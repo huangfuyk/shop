@@ -1,0 +1,68 @@
+ /* top */
+ .top{
+    margin: 0 auto;
+    height: 105px;
+    width: 1200px;
+   }
+.logo{
+   width: 220px;
+   color: #fc3f27;
+   
+}
+.logo p:nth-child(1){
+   font-family: "幼圆";
+   font-size: 35px;
+   font-weight: 900;
+   padding-bottom: 3px;
+   float:right;
+   margin-top: 23px;
+}
+.logo p:nth-child(2){
+   font-size: 14px;
+   letter-spacing: 9px;
+   float:right;
+   margin-right: -8px;
+}
+.top img{
+   width: 60px;
+   height: 60px;
+   float: left;
+   margin-top: 20px;
+}
+.top .search{float: right;margin-top: -62px;margin-right: 200px;}
+.top input{width: 550px;height: 35px;border: solid 2px #f54401;padding-left: 5px;}
+.top .btn{float: right;width: 80px;height: 41px;background-color: #f54401;border-style: none;color: aliceblue;font-size: 16px;}
+.top .btn:hover{cursor: pointer;}
+.top .search ul li{float: left;color: #333;font-size: 12px;margin-top: 7px;}
+.top .search ul li:nth-child(1){color: #9b9b9b;}
+.top .search ul li a:hover{color: #f54401;}
+
+.top .search .p1 a{float: left;margin-left: 76px;margin-top: 7px;}
+.top .search .p2 a{float: left;margin-top: 7px; }
+/* .top .search p:nth-child(2) a{float: left;margin-left: 30px;} */
+.top .search p a:hover{color: #f54401;}
+
+
+/* nav_wrap */
+.nav_wrap{
+    height: 40px;
+    background-color: #000;
+    border-top:solid 1px #ccc;
+    }
+/* nav */
+.nav{margin: 0 auto; width: 1200px;}
+.nav .box a{font-size: 16px;color: #fff;float: left;line-height: 40px;margin-left: 55px;}
+.nav ul{margin-left: 230px;}
+.nav ul li a{float: left;font-size: 16px;color: #fff;line-height: 39px;width: 130px;text-align: center;}
+.nav ul li a:hover{background-color:#343232;}
+
+
+.welcome{display: none;}
+
+.cont{width:1100px;overflow: hidden;margin: 0 auto;}
+.cont .goods{width: 270px;float: left; box-sizing: border-box;text-align: center;}
+.goods img{width: 250px;height: 300px;border: 16px solid #fff;}
+.goods img:hover{opacity: 0.7;}
+.goods span{display: block;margin: 10px 0;}
+.goods p{margin: 0;height: 40px;line-height: 20px;overflow: hidden;}
+.goods input{display: block; margin: 0 auto;font-size: 20px;height: 40px;margin-top: 10px;cursor: pointer;color: aliceblue;background-color: #f54401;border: none;}

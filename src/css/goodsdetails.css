@@ -1,0 +1,84 @@
+ /* top */
+ .top{
+    margin: 0 auto;
+    height: 105px;
+    width: 1200px;
+   }
+.logo{
+   width: 220px;
+   color: #fc3f27;
+   
+}
+.logo p:nth-child(1){
+   font-family: "幼圆";
+   font-size: 35px;
+   font-weight: 900;
+   padding-bottom: 3px;
+   float:right;
+   margin-top: 23px;
+}
+.logo p:nth-child(2){
+   font-size: 14px;
+   letter-spacing: 9px;
+   float:right;
+   margin-right: -8px;
+}
+.top img{
+   width: 60px;
+   height: 60px;
+   float: left;
+   margin-top: 20px;
+}
+.top .search{float: right;margin-top: -62px;margin-right: 200px;}
+.top input{width: 550px;height: 35px;border: solid 2px #f54401;padding-left: 5px;}
+.top .btn{float: right;width: 80px;height: 41px;background-color: #f54401;border-style: none;color: aliceblue;font-size: 16px;}
+.top .btn:hover{cursor: pointer;}
+.top .search ul li{float: left;color: #333;font-size: 12px;margin-top: 7px;}
+.top .search ul li:nth-child(1){color: #9b9b9b;}
+.top .search ul li a:hover{color: #f54401;}
+
+.top .search .p1 a{float: left;margin-left: 76px;margin-top: 7px;}
+.top .search .p2 a{float: left;margin-top: 7px; }
+/* .top .search p:nth-child(2) a{float: left;margin-left: 30px;} */
+.top .search p a:hover{color: #f54401;}
+
+
+/* nav_wrap */
+.nav_wrap{
+    height: 40px;
+    background-color: #000;
+    border-top:solid 1px #ccc;
+    }
+/* nav */
+.nav{margin: 0 auto; width: 1200px;}
+.nav .box a{font-size: 16px;color: #fff;float: left;line-height: 40px;margin-left: 55px;}
+.nav ul{margin-left: 230px;}
+.nav ul li a{float: left;font-size: 16px;color: #fff;line-height: 39px;width: 130px;text-align: center;}
+.nav ul li a:hover{background-color:#343232;}
+
+
+
+.clear{display: block;width: 0;height: 0;overflow: hidden;clear: both;}
+
+.cont{width: 1100px;margin: 0 auto;overflow: hidden;height: 424px;display: flex;justify-content: space-between;}
+
+/* 放大镜 */
+
+.magnifier{padding: 10px;position: relative;width: 400px;}
+.magnifier .s_box{width:400px;height: 300px;position: relative;}
+.magnifier .s_box img{width: 400px;height: 300px;}
+.magnifier .s_box span{width: 130px;height: 100px;background: rgba(200,200,200,0.5);position: absolute;left:0;top:0;display: none;cursor:move;}
+
+/* 遮罩层的样式，为了解决小滑块的抖动问题 */
+.magnifier .s_box .mask{width: 400px;height: 300px;position: absolute;left:0;top:0;margin: 0;}
+
+.magnifier .b_box{width: 400px;height: 300px;overflow: hidden;position: relative;display: none;position: absolute;right: -400px;top:0;}
+.magnifier .b_box img{width: 1200px;height: 900px;position: absolute;left:0;top:0;}
+
+.magnifier .list{margin: 20px 0;padding: 0;list-style: none;}
+.magnifier .list li{float: left;margin: 0 10px;}
+.magnifier .list li img{width: 100px;height: 80px;}
+
+.goodsMsg{width: 550px;height: 450px;display: flex;flex-direction: column; }
+.goodsMsg h3{font-size: 25px;color: #aaa;}
+.goodsMsg p{margin: 10px 0;font-size: 20px;color: #bbb;line-height: 50px;}
