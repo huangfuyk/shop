@@ -60,15 +60,24 @@
 .list_wrap{height: 500px;background-color: #e5e4e4;}
 
 /* list_all */
-.list_all{width: 1200px;margin: 0 auto;}
+.list_all{width: 1200px;margin: 0 auto;position: relative;}
 .list_all ul{width: 220px;height:500px;background-color: #000;float: left;}
-.list_all ul li{ width: 220px;height: 63px;text-align: center;line-height: 25px;overflow: hidden;}
+.list_all ul li{ width: 220px;height: 62px;text-align: center;line-height: 25px;overflow: hidden;}
 .list_all ul li a{ color: #eee; }
 .list_all ul li:nth-child(2n-1){background-color: #202020;}
 .list_all ul li:hover {background-color: #fff;}
 .list_all ul li:hover a{color: #000;}
 .list_all ul li p{height: 25px;width: 70px; font-weight: 900;font-size: 16px; margin :5px 66px;}
 .list_all ul li i{font-size: 12px; font-weight:500;margin:0 10px;}
+/* .list_all ul .li_foo{height: 50px; } */
+
+/* 二级菜单 */
+#secmenu .tab{width: 800px;height: 496px;background-color: #fff;position: absolute;top: 0;left: 220px;z-index: 1;border-right:solid 3px #202020 ;border-bottom:solid 4px #202020;display: none; }
+
+    /* .list_wrap .list_all ul li:hover .secmenu{opacity:0;} */
+
+
+
 /* list之轮播图 */
 .list_all .box{width: 980px;height: 300px;margin: 0 auto;position: relative;overflow: hidden;}
 .list_all .imgbox a{width: 1000px;height: 300px;position: absolute;left:1000px;top:0;}

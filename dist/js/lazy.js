@@ -1,0 +1,1 @@
+"use strict";var imgs=document.querySelectorAll(".lazy"),clientH=document.documentElement.clientHeight;function lazyImg(t){for(var e=Array.from(t),l=document.documentElement.scrollTop,c=0;c<e.length;c++)e[c].offsetTop+100<clientH+l&&(e[c].src=e[c].getAttribute("data-src"),e.splice(c,1),c--)}lazyImg(imgs),onscroll=function(){lazyImg(imgs)};
