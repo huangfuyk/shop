@@ -73,10 +73,18 @@
 
 /* 二级菜单 */
 #secmenu .tab{width: 800px;height: 496px;background-color: #fff;position: absolute;top: 0;left: 220px;z-index: 1;border-right:solid 3px #202020 ;border-bottom:solid 4px #202020;display: none; }
+#secmenu .tab .tab1,.tab2{width: 398px;height: 496px;float: left;z-index: 3;}
 
-    /* .list_wrap .list_all ul li:hover .secmenu{opacity:0;} */
-
-
+/* tab1 */
+#secmenu .tab .tab1 dl{width: 380px;height: 110px;margin: 8px auto;border-bottom: #eee solid 1px;}
+#secmenu .tab .tab1 dl dt{font-size: 14px;font-weight: 800;color: #f54401;margin-left: 10px;}
+#secmenu .tab .tab1 dl dd{float: left;margin: 10px;font-size: 13px;}
+#secmenu .tab .tab1 dl dd:hover a{color: #f54401;}
+/* tab2 */
+#secmenu .tab .tab2 dl{width: 380px;height: 110px;margin: 8px auto;border-bottom: #eee solid 1px;}
+#secmenu .tab .tab2 dl dt{font-size: 14px;font-weight: 800;color: #f54401;margin-left: 10px;}
+#secmenu .tab .tab2 dl dd{float: left;margin: 10px;font-size: 13px;}
+#secmenu .tab .tab2 dl dd:hover a{color: #f54401;}
 
 /* list之轮播图 */
 .list_all .box{width: 980px;height: 300px;margin: 0 auto;position: relative;overflow: hidden;}
